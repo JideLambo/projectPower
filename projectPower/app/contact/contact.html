@@ -1,0 +1,67 @@
+<div ng-controller="contactCtrl">
+	<div class="ziuss-page-wrapper">
+        <div class="pd-10">
+                <div class="container order-form">
+                    <h2 class="request-title">CONTACT US</h2>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form id="order-form" ng-submit="contactRep()">
+                                <p class="quote-intro">
+                                    <strong>To receive a quote, please fill out the form below</strong> <br>
+                                    A Ziuss representative will follow up with you the information you requested.
+                                </p>
+                                
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="form-label">FULL NAME</label>
+                                            <input type="text" class="form-control" ng-model="name">
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label class="form-label">PHONE NUMBER</label>
+                                            <input type="number" class="form-control" ng-model="phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="form-label">EMAIL</label>
+                                            <input type="email" class="form-control" ng-model="email">
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label class="form-label">CONFIRM EMAIL</label>
+                                            <input type="email" class="form-control" ng-model="confirmEmail">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label class="form-label">DROP A NOTE</label>
+                                            <textarea rows="6" class="form-control" ng-model="notes"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="order-button">
+                                    <div class="separator">
+                                        <button class="button quote-btn contact-btn">SEND MESSAGE</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4 hidden-xs">
+                            <div class="ziuss-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.60860052537!2d3.420857314316683!3d6.4442743258682444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjYnMzkuNCJOIDPCsDI1JzIzLjAiRQ!5e0!3m2!1sen!2sng!4v1493022687533" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

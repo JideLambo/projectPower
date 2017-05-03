@@ -1,0 +1,68 @@
+.ziuss-btn {
+  padding: 5px 14px;
+  border-radius: 3px;
+  background-color: $brand-color;    
+  color: $text-1-color;
+  font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-color: $brand-color;
+    border: 2px solid transparent;
+    transition: background-color .2s ease-in-out;
+    
+    &:hover {
+        color: $text-1-color;
+        background-color: $brand-color-hover;
+        border-color: $brand-color-hover;
+    }
+}
+
+.search-btn {
+    @extend .ziuss-btn;
+    background-color: $text-2-color;
+    color: $white-color;
+}
+
+.request-btn {
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    
+    @include screen(tiny) {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+     }
+    
+    @include screen(small) {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+     }
+}
+
+.order-button {
+    margin-top: 10px;
+}
+
+.quote-btn {
+    @extend .ziuss-btn;
+    width: 48%;
+    padding: 10px auto;
+    margin-top: 10px;
+    
+    @include screen(tiny) {
+        width: 100%;
+     }
+    
+    @include screen(small) {
+        width: 100%;
+     }
+}
+
+.contact-btn {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}

@@ -1,0 +1,142 @@
+<div ng-controller='generatorSetCtrl'>
+	<div class="ziuss-page-wrapper">
+        <div class="pd-30">
+            <div class="container">
+                <div class="row">
+                    <ol class="breadcrumb">
+                      <li><a href="#!/">HOME</a></li>
+                      
+                      <li><a href="#">GENERATING SETS</a></li>
+                      
+                      <li class="active">60.0kVA DIESEL GENERATOR</li>
+                    </ol>
+                </div>
+                
+                <div class="product-content">
+                    <div class="row pax-left">
+                        <div class="col-md-6">
+                            <h2 class="header-text">Ziuss 60.0kVA Diesel Generator - Model MP60</h2>
+                            <div class="desc-text mt-30">
+                               <h4>Product Description</h4>
+                               
+                               <ul>
+                                   <li>
+                                   <div class="list__step">
+                                       <span></span>
+                                   </div>
+                                   <span>Ziuss Heavy-Duty Diesel Generator delivers reliable power, low emissions, and fast response to load changes.</span>
+                                   </li>
+                                   
+                                   <li>
+                                   <div class="list__step">
+                                       <span></span>
+                                       <span></span>
+                                   </div>
+                                   <span>Generating set engine are EU Stage IIIA emissions compliant.</span>
+                                   </li>
+                                   
+                                   <li>
+                                   <div class="list__step">
+                                       <span></span>
+                                       <span></span>
+                                       <span></span>
+                                   </div>
+                                   <span>Minimum Rating - 60.0kVA. Maximum Rating - 66.0kVA</span>
+                                   </li>
+                                   
+                               </ul>
+                                
+                            </div>
+                            
+                            <div class="product-request mt-30">
+                                <button href="#" class="btn ziuss-btn request-btn" id="request-btn">REQUEST A QUOTE</button>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="product-gallery">
+                                <img src="dist/img/product/diesel-gen-product.png" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="container order-form" style="display: none">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form id="order-form" method="post">
+                                <p class="quote-intro">
+                                    <strong>To receive a quote, please fill out the form below</strong> <br>
+                                    A Ziuss representative will follow up with you the information you requested.
+                                </p>
+                                
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="form-label">FIRST NAME</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label class="form-label">LAST NAME</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="form-label">EMAIL</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label class="form-label">CONFIRM EMAIL</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="form-label">PHONE NUMBER</label>
+                                            <input type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="order-button">
+                                    <div class="separator">
+                                        <button class="button quote-btn">REQUEST QUOTE</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script>
+	    var requestBtn = $("#request-btn");
+    var orderForm = $(".order-form");
+    $('.product-request').on("click", '#request-btn', function(){
+        $(orderForm).fadeIn();
+        
+        $('html,body').animate({
+        scrollTop: $(orderForm).offset().top},
+        'slow'); 
+        
+        $(this).fadeOut();
+    });
+
+</script>

@@ -1,0 +1,110 @@
+.ziuss-content {
+    height: 500px;
+    overflow: hidden;
+    
+    @include screen(small) {
+        height: 600px;
+     }
+}
+
+.hero-bg {
+    background-image: url('../img/header-bg.png');
+    background-color: $body-color;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: absolute;
+    left: 0px;
+    display: block;
+    margin-top: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    box-shadow: 0 1px 5px 2px rgba(0,0,0,0.25);
+    
+    @include screen(small) {
+        height: 600px;
+     }
+}
+
+.header-caption {
+    position: relative;
+    text-align: left;
+    text-shadow: none;
+    right:0;
+    left: 0;
+    
+    @include screen(tiny) {
+        padding-top: 10px;
+     } 
+    
+    @include screen(small) {
+        padding-top: 10px;
+     } 
+    
+    .ziuss-btn {
+        
+        a {
+            color: $text-2-color;
+            
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.header-product {
+    display: block;
+    padding: 30px 0;
+    
+    @include screen(tiny) {
+        padding: 10px 0;
+     }
+    
+    img {
+        width: 100%;
+    }
+}
+
+.ziuss-header {
+    padding-top: 30px;
+    
+    @include screen(tiny) {
+        padding-top: 0;
+     }
+}
+
+.product-caption {
+    margin-bottom: 20px;
+    
+    ul {
+        list-style-type: none;
+        li {
+            text-indent: -5px;
+            
+            &:before {
+                content: "-";
+                text-indent: -5px;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+.carousel-indicators {
+    
+    
+    li {
+        border: 1px solid $text-2-color;
+        background-color: #fff;
+        
+        &.active {
+            background-color: $brand-color;
+        }
+    }
+    
+}
+
+

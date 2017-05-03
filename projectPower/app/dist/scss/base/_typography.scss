@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+
+$font-size-small: 12px;
+$font-size-regular: 14px;
+$font-size-large: 22px;
+$font-size-x-large: 30px;
+$font-size-xx-large: 38px;
+
+$font-family-text: 'Open Sans', sans-serif;
+$font-family-heading: 'Montserrat', sans-serif;
+$font-family-secondary: 'Montserrat', sans-serif;
+$font-family-accent: 'Lora', serif;
+
+p {
+    font-size: 14px;
+    color: #1F1F26;
+    line-height: 1.5;
+}
+
+.header-text {
+    font-size: $font-size-x-large;
+    font-family: $font-family-heading;
+    color: $text-3-color;
+    font-weight: 400;
+    
+    @include screen(small) {
+        font-size: $font-size-large;
+        margin-top: 0;
+     }
+}
+
+.subheader-text {
+    color: $text-2-color;
+    font-size: $font-size-large;
+    font-weight: $font-family-text;
+    font-weight: normal;
+    
+    @include screen(small) {
+        font-size: $font-size-regular;
+        font-weight: bolder;
+        text-transform: capitalize;
+     }
+}
+
+.desc-text {
+    font-size: $font-size-regular;
+    font-weight: $font-family-text;
+    color: $text-2-color;
+    font-weight: normal;
+    
+}
+
+.tiny-text {
+    font-size: $font-size-small;
+    color: $alt-color;
+    font-weight: normal;
+    
+    @include screen(small) {
+        font-size: 10px;
+     }
+    
+    & > a {
+        color: $alt-color;
+    }
+}

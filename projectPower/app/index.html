@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ziuss Power and Energy</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="dist/css/main.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body ng-app = "myApp">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span>Menu</span>
+                </button>
+                <a class="navbar-brand" href="#!/">Ziuss Energy and Power</a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#!/ziussProducts">generating sets</a></li>
+                    <li><a href="#">power solution</a></li>
+                    <li><a href="#!/contact">contact us</a></li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-nav__contact">
+                    <li><a href="#"><i class="icon icon-phone"></i> <span>08102003467</span></a></li>
+                    <li><a href="#"><i class="icon icon-whatsapp"></i> <span>08102003467</span></a></li>
+                </ul>
+            </div><!--.nav-collapse -->
+        </div>
+    </nav>
+          
+  <div ng-view>
+    
+  </div>
+
+    <footer class="footer">
+       <div class="footer-top-wrapper">
+            <div class="container">
+                <div class="footer-wrapper">            
+                    <div class="row">
+<!--
+                        <div class="col-md-3">
+                            <div class="footer-logo">
+                                <img class="footer_logo" src="dist/img/ziuss-logo.png" alt="ziuss energy and power logo">
+                            </div>
+                        </div>
+-->
+                        <div class="col-md-3">
+                            <ul class="footer-ul">
+                                <li class="footer-heading">Solutions</li>
+                                <li class="footer-item">
+                                    <a href="#">Generating Sets</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Power Solution</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Maintenance</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="footer-ul">
+                                <li class="footer-heading">Resources</li>
+                                <li class="footer-item">
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">General Services</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Privacy &amp; Terms</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="footer-ul">
+                                <li class="footer-heading">Main Office</li>
+                                <li class="footer-item">
+                                   103, Awolowo Road, Ikoyi, Lagos
+                                </li>
+                                <li class="footer-item">
+                                   +234-8033242073, +234-8172011900
+                                </li>
+                                <li class="footer-item">
+                                    <a href="#">Email: contact@ziusspowerng.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>© 2017 ZIUSS ENERGY &amp; POWER LTD</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/firebase/firebase.js"></script>
+  <script src="bower_components/angularfire/dist/angularfire.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="app.js"></script>
+  <script src="home/home.js"></script>
+  <script src="ziussProducts/ziussProducts.js"></script>
+  <script src="generatorSet/generatorSet.js"></script>
+  <script src="contact/contact.js"></script>
+  <script src="dist/js/main.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

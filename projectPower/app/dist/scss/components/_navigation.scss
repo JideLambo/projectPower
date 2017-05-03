@@ -1,0 +1,108 @@
+.navbar {
+    background-color: #fff;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 10px 0;
+    border-bottom: 2px solid $brand-color;
+}
+
+.navbar-header {
+    
+    .navbar-toggle {
+        
+        @include screen(small) {
+            font-size: 12px;
+            background-color: #73ff48;
+            border-color: #73ff48; 
+         }
+        
+    }
+}
+.navbar-brand {
+    width: 135px;
+    height: 44px;
+    background-image: url(../img/ziuss-logo.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    margin-left: 0 !important;
+    
+    @include screen(tiny) {
+        margin-left: 10px !important; 
+     }
+    @include screen(small) {
+        margin-left: 10px !important; 
+     }
+}
+
+.navbar-nav {
+    left: 30px;
+    position: relative;
+    
+    li {
+        
+            
+        &.active {
+            
+            a {
+                background-color: transparent !important;
+                color: $alt-color !important;
+            }
+            
+        }
+        
+        a {
+            font-size: 13px;
+            font-family: $font-family-heading;
+            color: #333 !important;
+            font-weight: normal;
+            padding-right: 10px;
+            padding-left: 6px;
+            text-transform: uppercase;
+        }
+    }
+    
+    &__contact {
+        float: right;
+        
+        @include screen(tiny) {
+            float: none; 
+         }
+        @include screen(small) {
+            float: none; 
+         }
+        li {
+            
+            a {
+                padding-left:10px; 
+                opacity: 0.9;
+                font-size: $font-size-small;
+            }
+            
+            span {
+                display: inline-block;
+                position:relative;
+                bottom: 4px;
+            }
+        }
+    }
+}
+
+i.icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    
+    &-phone {
+        background-image: url(../../dist/img/phone.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    
+    &-whatsapp {
+        background-image: url(../../dist/img/whatsapp.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
